@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo chart list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+</head>
+
+<body>
+    <main class="main-container">
+        <section class="container">
+            <div class="container-todo-list">
+                <div class="Todo-list" draggable="false">
+                    <div class="title-todo-list">
+                        <h2 class="title-item-first">try hard to build an empire!</h2>
+                        <h2 class="title-item-second"> Just Do It.</h2>
+                    </div>
+                    <div class="add-to-body-todo-list">
+                        <input type="text" id="add-todo" placeholder="your task..." class="add-todo">
+                        <button id="add-todo-btn" class="add-todo-btn">Add</button>
+                    </div>
+                    <div class="body-todo-list" draggable="false">
+                        <!-- <div class="todo-item">
+                            <div class="icone"><i></i></div>
+                            <div class="div-work-todo-added"><h2>Find job</h2></div>
+                            <div class="div-complite-todo-work-added"><input type="checkbox"></div>
+                        </div> -->
+                    </div>
+                    <div class="manage-todo-item-see">
+                        <div class="delete-one-item">
+                            <button id="delete-task">Delete</button>
+                            <div class="show-del-basket">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="bi bi-trash3"
+                                    viewBox="0 0 16 16" id="Trash3--Streamline-Bootstrap" height="16" width="16">
+                                    <desc>
+                                        Trash3 Streamline Icon: https://streamlinehq.com
+                                    </desc>
+                                    <path
+                                        d="M6.5 1h3a0.5 0.5 0 0 1 0.5 0.5v1H6v-1a0.5 0.5 0 0 1 0.5 -0.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a0.5 0.5 0 0 0 0 1h0.538l0.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994 -1.84l0.853 -10.66h0.538a0.5 0.5 0 0 0 0 -1zm1.958 1 -0.846 10.58a1 1 0 0 1 -0.997 0.92h-6.23a1 1 0 0 1 -0.997 -0.92L3.042 3.5zm-7.487 1a0.5 0.5 0 0 1 0.528 0.47l0.5 8.5a0.5 0.5 0 0 1 -0.998 0.06L5 5.03a0.5 0.5 0 0 1 0.47 -0.53Zm5.058 0a0.5 0.5 0 0 1 0.47 0.53l-0.5 8.5a0.5 0.5 0 1 1 -0.998 -0.06l0.5 -8.5a0.5 0.5 0 0 1 0.528 -0.47M8 4.5a0.5 0.5 0 0 1 0.5 0.5v8.5a0.5 0.5 0 0 1 -1 0V5a0.5 0.5 0 0 1 0.5 -0.5"
+                                        stroke-width="1"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="delete-all-item">
+                            <button id="delete-all-task">Delete All</button>
+                        </div>
+                    </div>
+                    <div class="number-of-todo-you-notchecked-added">
+                        <div></div>
+                        <h2>You have <span id="number-todo">0</span> not complited work!</h2>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="chart-todo-list">
+                    <canvas id="myChart-Todo"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
