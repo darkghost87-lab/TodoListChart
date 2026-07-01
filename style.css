@@ -154,7 +154,7 @@ body {
 }
 
 .div-work-todo-added h2 {
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(14px, 2vw, 20px);
 }
 
 .div-complite-todo-work-added {
@@ -231,7 +231,7 @@ svg {
 }
 
 .number-of-todo-you-notchecked-added h2 {
-    font-size: clamp(10px, 1.8vw, 20px);
+    font-size: clamp(15px, 1.8vw, 20px);
 }
 
 .number-of-todo-you-notchecked-added div {
@@ -327,7 +327,7 @@ svg {
     }
 
     .add-to-body-todo-list {
-        width: 60%;
+        width: 80%;
     }
 
     svg {
@@ -337,5 +337,23 @@ svg {
 
     .manage-todo-item-see button {
         width: 60px;
+    }
+
+
+    .title-todo-list {
+        width: 80%;
+    }
+
+    .body-todo-list {
+        width: 80%;
+    }
+
+    .div-work-todo-added {
+        width: 70%;
+    }
+
+    .chart-todo-list{
+        width: 80vw;
+        height: 20rem;
     }
 }
