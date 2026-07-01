@@ -91,6 +91,11 @@ function TodoList() {
 }
 
 function setUpDragDrop() {
+    // فعال‌سازی درگ و دراپ برای موبایل
+    if (typeof enableDragDropTouch === 'function') {
+        enableDragDropTouch();
+    }
+
     const todoList = document.querySelector('.body-todo-list');
     const showDelBasket = document.querySelector('.show-del-basket');
 
